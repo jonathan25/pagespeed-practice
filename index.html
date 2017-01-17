@@ -8,6 +8,20 @@
 <body>
 <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css?v=1234" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
 <link rel="stylesheet" href="side-menu.css">
+<style>
+#image-1 {
+   background: url("https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e15/10948794_523766494432191_181942170_n.jpg");
+}
+#image-2 {
+   background: url("https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e15/11296875_1576154892651065_104049781_n.jpg");
+}
+#image-3 {
+   background: url("https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e15/11373836_977992532219941_1246945570_n.jpg");
+}
+#image-4 {
+   background: url("http://scontent-b-lax.cdninstagram.com/hphotos-xap1/t51.2885-15/10249317_657733337629239_1612782864_n.jpg");
+}
+</style>
 <div id="layout">
     <!-- Menu toggle -->
     <a href="#menu" id="menuLink" class="menu-link">
@@ -51,18 +65,10 @@
             </p>
 
             <div class="pure-g">
-                <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e15/10948794_523766494432191_181942170_n.jpg">
-                </div>
-                <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e15/11296875_1576154892651065_104049781_n.jpg">
-                </div>
-                <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e15/11373836_977992532219941_1246945570_n.jpg">
-                </div>
-                <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="http://scontent-b-lax.cdninstagram.com/hphotos-xap1/t51.2885-15/10249317_657733337629239_1612782864_n.jpg">
-                </div>               
+                <div id="image-1" class="pure-u-1-4"></div>
+                <div id="image-2" class="pure-u-1-4"></div>
+                <div id="image-3" class="pure-u-1-4"></div>
+                <div id="image-4" class="pure-u-1-4"></div>               
             </div>
 
             <h2 id="resizing" class="content-subhead">Try Resizing your Browser</h2>
@@ -72,6 +78,6 @@
         </div>
     </div>
 </div>
-<script src="script.js"></script>
-<script src="moment.js"></script>  
+<script async src="script.js"></script>
+<script async src="moment.js"></script>  
 </body></html>
