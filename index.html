@@ -70,6 +70,12 @@
         </div>
     </div>
     <script type="text/javascript">
+        var scr  = document.createElement('script'),
+        head = document.head || document.getElementsByTagName('head')[0];
+        scr.src = 'script.js';
+        scr.async = true;
+ 
+        head.insertBefore(scr, head.firstChild);
         var loadDeferredStyles = function() {
             var addStylesNode = document.getElementById("deferred-styles");
             var replacement = document.createElement("div");
