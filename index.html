@@ -58,7 +58,7 @@
                         <img class="pure-img-responsive" src="https://scontent-lax3-1.cdninstagram.com/t51.2885-15/s200x200/11373836_977992532219941_1246945570_n.jpg">
                     </div>
                     <div class="pure-u-1-4">
-                        <img class="pure-img-responsive" src="http://scontent-lax3-1.cdninstagram.com/t51.2885-15/s200x200/10249317_657733337629239_1612782864_n.jpg">
+                        <img class="pure-img-responsive" src="https://scontent-lax3-1.cdninstagram.com/t51.2885-15/s200x200/10249317_657733337629239_1612782864_n.jpg">
                     </div>               
                 </div>
 
@@ -69,8 +69,14 @@
             </div>
         </div>
     </div>
-    <script type='text/javascript' async=false defer=false src='script.js'></script>
     <script type="text/javascript">
+        var scr  = document.createElement('script'),
+        head = document.head || document.getElementsByTagName('head')[0];
+        scr.src = 'script.js';
+        scr.async = false; // optionally
+
+        head.insertBefore(scr, head.firstChild);
+        
         var loadDeferredStyles = function() {
             var addStylesNode = document.getElementById("deferred-styles");
             var replacement = document.createElement("div");
