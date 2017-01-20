@@ -9,6 +9,12 @@
 <title>PageSpeed Practice</title>
 </head>
 <body>
+<script async src="moment.js"></script>  
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    @import 'https://unpkg.com/purecss@0.6.2/build/pure-min.css'
+    @import 'side-menu.css';
+</style>
 <div id="layout">
     <!-- Menu toggle -->
     <a href="#menu" id="menuLink" class="menu-link">
@@ -36,7 +42,7 @@
             <h1>PageSpeed Excercise</h1>
             <h2>Implement best practices for web performance.</h2>
             <h2>
-            <script>window.onload = function() { document.write(moment().format('MMMM Do YYYY')) };</script>            
+            <script>document.write(moment().format('MMMM Do YYYY'));</script>            
             </h2>
         </div>
 
@@ -73,10 +79,5 @@
         </div>
     </div>
 </div>
-    
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
-<link rel="stylesheet" href="side-menu.css">
 <script async src="script.js"></script>
-<script async src="moment.js"></script>  
 </body></html>
