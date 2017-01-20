@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PageSpeed Practice</title>
-    <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="style.css" as="style">
     <noscript><link rel="stylesheet" href="style.css"></noscript>
 </head>
 <body>
@@ -67,11 +67,18 @@
         </div>
     </div>
     <script type="text/javascript">
+        //Loading resources async.
         var scr  = document.createElement('script'),
         head = document.head || document.getElementsByTagName('head')[0];
         scr.src = 'script.js';
         scr.async = true;
 
         head.insertBefore(scr, head.firstChild);
+        
+        //polyfill for CSS
+        window.onload = function () {
+            var styletag = document.getElementById('styletag');
+            styletag.rel = 'stylesheet';
+        }
     </script>
 </body></html>
