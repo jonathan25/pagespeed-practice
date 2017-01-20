@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PageSpeed Practice</title>  
-	<script async src="script.js"></script>
 </head>
 <body>
 
@@ -70,21 +69,22 @@
 			</div>
 		</div>
 	</div>
+	<script type='text/javascript' async=false defer=false src='script.js'></script>
 	<script type="text/javascript">
-		window.onload = function() {
-			var heading = document.getElementById('date-heading');
-			heading.innerHTML = moment().format('MMMM Do YYYY');
-			var loadDeferredStyles = function() {
-				var addStylesNode = document.getElementById("deferred-styles");
-				var replacement = document.createElement("div");
-				replacement.innerHTML = addStylesNode.textContent;
-				document.body.appendChild(replacement)
-				addStylesNode.parentElement.removeChild(addStylesNode);
-			};
-			var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-			webkitRequestAnimationFrame || msRequestAnimationFrame;
-			if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-			else window.addEventListener('load', loadDeferredStyles);
-		}
-	</script>
+	window.onload = function() {
+    		var heading = document.getElementById('date-heading');
+    		heading.innerHTML = moment().format('MMMM Do YYYY');
+    	}
+    	var loadDeferredStyles = function() {
+    		var addStylesNode = document.getElementById("deferred-styles");
+    		var replacement = document.createElement("div");
+    		replacement.innerHTML = addStylesNode.textContent;
+    		document.body.appendChild(replacement)
+    		addStylesNode.parentElement.removeChild(addStylesNode);
+    	};
+    	var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+    	webkitRequestAnimationFrame || msRequestAnimationFrame;
+    	if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+    	else window.addEventListener('load', loadDeferredStyles);
+    </script>
 </body></html>
