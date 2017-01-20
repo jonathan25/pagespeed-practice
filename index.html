@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PageSpeed Practice</title>
-    <link rel="stylesheet" href="style.css" media="bogus">
+    <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
 </head>
 <body>
     <div id="layout">
@@ -12,15 +13,15 @@
         <a href="#menu" id="menuLink" class="menu-link"> </a>
         <div id="menu">
             <div class="pure-menu pure-menu-open">
-                <a class="pure-menu-heading" href="#" style="font-family:sans-serif">Excercise</a>
+                <a class="pure-menu-heading" href="#">Excercise</a>
 
                 <ul class="pure-menu-list">
-                    <li><a href="#main" class="pure-menu-link" style="font-family:sans-serif">PageSpeed</a></li>
+                    <li><a href="#main" class="pure-menu-link">PageSpeed</a></li>
                     <li class="menu-item-divided">
-                        <a href="#howto" class="pure-menu-link" style="font-family:sans-serif">Why use them</a>
+                        <a href="#howto" class="pure-menu-link">Why use them</a>
                     </li>
                     <li class="menu-item-divided">
-                        <a href="#resizing" class="pure-menu-link" style="font-family:sans-serif">Resize your browser</a>
+                        <a href="#resizing" class="pure-menu-link">Resize your browser</a>
                     </li>
                 </ul>
             </div>
@@ -73,5 +74,4 @@
 
         head.insertBefore(scr, head.firstChild);
     </script>
-    <link rel="stylesheet" href="style.css">
 </body></html>
